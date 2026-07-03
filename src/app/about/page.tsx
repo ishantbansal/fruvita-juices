@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Blob from "@/components/Blob";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Our Story — Fruvita",
@@ -111,18 +112,17 @@ export default function AboutPage() {
             Our Values
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {values.map((v) => (
-              <div
-                key={v.title}
-                className="rounded-2xl border border-[var(--color-line)] bg-[var(--color-paper)] p-7"
-              >
-                <h3 className="font-display text-xl font-semibold text-[var(--color-ink)]">
-                  {v.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                  {v.body}
-                </p>
-              </div>
+            {values.map((v, i) => (
+              <Reveal key={v.title} delay={(i % 2) * 100}>
+                <div className="rounded-2xl border border-[var(--color-line)] bg-[var(--color-paper)] p-7">
+                  <h3 className="font-display text-xl font-semibold text-[var(--color-ink)]">
+                    {v.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                    {v.body}
+                  </p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
         </h2>
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4">
           {process.map((p, i) => (
-            <div key={p.step} className="text-center">
+            <Reveal key={p.step} delay={i * 100} className="text-center">
               <span
                 className="font-display text-5xl italic"
                 style={{ color: processColors[i % processColors.length] }}
@@ -147,7 +147,7 @@ export default function AboutPage() {
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
                 {p.body}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>

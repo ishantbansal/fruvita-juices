@@ -68,8 +68,12 @@ export default function Nav() {
         </button>
       </div>
 
-      {open && (
-        <nav className="flex flex-col gap-1 border-t border-[var(--color-line)] px-6 py-4 md:hidden">
+      <nav
+        className={`grid overflow-hidden border-[var(--color-line)] transition-all duration-300 ease-out md:hidden ${
+          open ? "grid-rows-[1fr] border-t opacity-100" : "grid-rows-[0fr] border-t-0 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col gap-1 overflow-hidden px-6 py-2">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -80,8 +84,8 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
-        </nav>
-      )}
+        </div>
+      </nav>
     </header>
   );
 }

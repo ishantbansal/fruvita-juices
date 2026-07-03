@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import Blob from "@/components/Blob";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Contact — Fruvita",
@@ -42,12 +43,12 @@ export default function ContactPage() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-5">
-          <div className="md:col-span-3 rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8 md:p-10">
+          <Reveal className="md:col-span-3 rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8 md:p-10">
             <ContactForm />
-          </div>
+          </Reveal>
 
           <div className="md:col-span-2 space-y-6">
-            <div className="rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8">
+            <Reveal delay={100} className="rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8">
               <h3 className="font-display text-lg font-semibold text-[var(--color-ink)]">
                 Reach Us Directly
               </h3>
@@ -61,9 +62,10 @@ export default function ContactPage() {
                   </div>
                 ))}
               </dl>
-            </div>
+            </Reveal>
 
-            <div
+            <Reveal
+              delay={200}
               className="rounded-3xl p-8 text-[var(--color-cream)]"
               style={{ background: "linear-gradient(135deg, var(--color-leaf), var(--color-leaf-deep))" }}
             >
@@ -75,7 +77,7 @@ export default function ContactPage() {
                 distributor? Reach out to our business team with your
                 location and business details.
               </p>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>

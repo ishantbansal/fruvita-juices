@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import Blob from "@/components/Blob";
+import Reveal from "@/components/Reveal";
 import { originals, mixAndThrill } from "@/data/products";
 
 export const metadata: Metadata = {
@@ -30,6 +32,17 @@ export default function ProductsPage() {
         <p className="mx-auto mt-5 max-w-xl text-lg text-[var(--color-ink-soft)]">
           Everyday classics and bold new blends — all made from real fruit.
         </p>
+
+        <Reveal delay={150} className="relative mx-auto mt-12 max-w-4xl">
+          <Image
+            src="/products/lineup-group.webp"
+            alt="The full Fruvita juice lineup — mango, guava, orange, pomegranate, pineapple, lychee, apple, and peach bottles side by side"
+            width={1600}
+            height={912}
+            className="h-auto w-full rounded-[2rem] shadow-[0_30px_60px_-20px_rgba(36,26,16,0.3)]"
+            priority
+          />
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
@@ -40,8 +53,10 @@ export default function ProductsPage() {
           <span className="h-px flex-1 bg-[var(--color-line)]" />
         </div>
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
-          {originals.map((p) => (
-            <ProductCard key={p.slug} product={p} />
+          {originals.map((p, i) => (
+            <Reveal key={p.slug} delay={(i % 4) * 80}>
+              <ProductCard product={p} />
+            </Reveal>
           ))}
         </div>
       </section>
@@ -54,8 +69,10 @@ export default function ProductsPage() {
           <span className="h-px flex-1 bg-[var(--color-line)]" />
         </div>
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
-          {mixAndThrill.map((p) => (
-            <ProductCard key={p.slug} product={p} />
+          {mixAndThrill.map((p, i) => (
+            <Reveal key={p.slug} delay={(i % 4) * 80}>
+              <ProductCard product={p} />
+            </Reveal>
           ))}
         </div>
       </section>

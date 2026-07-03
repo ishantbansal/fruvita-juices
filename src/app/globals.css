@@ -149,6 +149,15 @@ body::before {
   animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* fades a rectangular product photo's edges so it blends into the card
+   instead of showing a hard-edged background */
+.product-photo-mask {
+  mask-image: radial-gradient(ellipse 62% 70% at 50% 48%, black 55%, transparent 92%);
+  -webkit-mask-image: radial-gradient(ellipse 62% 70% at 50% 48%, black 55%, transparent 92%);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
 @keyframes reveal-up {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }

@@ -72,7 +72,7 @@ export default async function ProductDetailPage({
                     fill
                     sizes="256px"
                     priority
-                    className="object-contain drop-shadow-[0_28px_32px_rgba(42,33,23,0.3)]"
+                    className="product-photo-mask object-contain drop-shadow-[0_28px_32px_rgba(42,33,23,0.3)]"
                   />
                 </div>
               ) : (

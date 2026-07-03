@@ -5,7 +5,9 @@ Reference: `content/images/mockups/fruvita-packaging-mango-juice.png` is the **l
 **Every prompt below is a drop-in replacement for the mango one** — same bottle, same label anatomy, same photography style — just swap the fruit art, name, and color. Paste each into your image generator (Ideogram/Recraft/ChatGPT image) one at a time. Aim for 1024×1536 or taller (portrait bottle shot), then save to `content/images/products/` and I'll crop/optimize + wire into `ProductCard`/`[slug]/page.tsx` to replace the SVG `JuiceBottle` placeholders.
 
 **Master style suffix — append to every prompt:**
-`, photorealistic product photography, 250ml glass juice bottle with dark brown cap, cream-colored label with arched top border, Fruvita wordmark and small citrus-slice-and-leaf logo centered at top of label, tagline "Real Fruit. Real Fruvita." in small green text below the logo, "MADE WITH REAL FRUIT" badge text, three small claim icons in a row, ingredients/net quantity/nutrition text block at the bottom of the label, warm cream seamless studio background, soft even lighting, soft ground shadow, subtle glass highlight on the left edge, sharp focus, no extra props, no hands`
+`, photorealistic product photography, 250ml glass juice bottle with dark brown cap, cream-colored label with arched top border, Fruvita wordmark and small citrus-slice-and-leaf logo centered at top of label, tagline "Real Fruit. Real Fruvita." in small green text below the logo, "MADE WITH REAL FRUIT" badge text, three small claim icons in a row, ingredients/net quantity/nutrition text block at the bottom of the label, plain flat seamless cream studio background with NO orchard/scene/fruit-tree elements behind the bottle, soft even lighting, soft ground shadow only, subtle glass highlight on the left edge, sharp focus, no extra props, no hands`
+
+> Note: the last batch came back with blurred orchard backgrounds behind the bottle, which look inconsistent once placed on the site's flat cream cards — the line above explicitly rules that out this time so the new photos crop/mask cleanly like the mango one.
 
 ---
 

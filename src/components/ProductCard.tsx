@@ -24,7 +24,7 @@ export default function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="96px"
-            className="object-contain drop-shadow-[0_12px_16px_rgba(42,33,23,0.25)] transition-transform duration-300 group-hover:scale-105"
+            className="product-photo-mask object-contain drop-shadow-[0_12px_16px_rgba(42,33,23,0.25)] transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <JuiceBottle {...product.colors} className="h-full w-full" />
