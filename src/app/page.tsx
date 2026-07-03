@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import JuiceBottle from "@/components/JuiceBottle";
 import ProductCard from "@/components/ProductCard";
 import Blob from "@/components/Blob";
 import Reveal from "@/components/Reveal";
-import { products } from "@/data/products";
+import { products, getProduct } from "@/data/products";
 
 const trustItems = [
   { icon: "🍃", label: "Real Fruit, Always", bg: "color-mix(in srgb, var(--color-leaf) 18%, transparent)" },
@@ -27,7 +28,12 @@ const pillars = [
   },
 ];
 
-const heroBottles = [products[0], products[1], products[3], products[9]];
+const heroBottles = [
+  getProduct("mango")!,
+  getProduct("guava")!,
+  getProduct("pomegranate")!,
+  getProduct("pineapple")!,
+];
 const pillarColors = ["var(--color-mango-deep)", "var(--color-guava-deep)", "var(--color-leaf-deep)"];
 
 export default function Home() {
@@ -38,16 +44,16 @@ export default function Home() {
         <Blob
           color="var(--color-mango)"
           color2="var(--color-citrus)"
-          className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 opacity-60 animate-float-slow"
+          className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 opacity-40 animate-float-slow"
         />
         <Blob
           color="var(--color-guava)"
           color2="var(--color-berry)"
-          className="pointer-events-none absolute top-40 -right-32 h-[28rem] w-[28rem] opacity-45 animate-float-slower"
+          className="pointer-events-none absolute top-40 -right-32 h-[28rem] w-[28rem] opacity-30 animate-float-slower"
         />
         <Blob
           color="var(--color-lime)"
-          className="pointer-events-none absolute bottom-0 left-1/3 h-72 w-72 opacity-35 animate-float-slow"
+          className="pointer-events-none absolute bottom-0 left-1/3 h-72 w-72 opacity-25 animate-float-slow"
         />
 
         <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-16 md:flex-row">
@@ -84,10 +90,20 @@ export default function Home() {
             {heroBottles.map((p, i) => (
               <div
                 key={p.slug}
-                className={i % 2 === 0 ? "animate-float-slow" : "animate-float-slower"}
+                className={`relative ${i % 2 === 0 ? "animate-float-slow" : "animate-float-slower"}`}
                 style={{ height: `${260 + (i % 2) * 60}px`, width: "90px" }}
               >
-                <JuiceBottle {...p.colors} className="h-full w-full" />
+                {p.image ? (
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    sizes="120px"
+                    className="product-photo-mask object-contain drop-shadow-[0_16px_20px_rgba(42,33,23,0.3)]"
+                  />
+                ) : (
+                  <JuiceBottle {...p.colors} className="h-full w-full" />
+                )}
               </div>
             ))}
           </div>
