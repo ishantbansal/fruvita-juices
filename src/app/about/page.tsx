@@ -132,6 +132,28 @@ export default function AboutPage() {
         <h2 className="text-center font-display text-4xl font-semibold tracking-tight text-[var(--color-ink)]">
           How We Make It
         </h2>
+
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <Reveal className="relative overflow-hidden rounded-3xl shadow-[0_20px_40px_-16px_rgba(36,26,16,0.3)]">
+            <Image
+              src="/brand/ingredients-flatlay.webp"
+              alt="Fresh mangoes, guavas, oranges, pomegranates, lychees, and pineapple sourced for Fruvita juices"
+              width={1400}
+              height={1050}
+              className="h-full w-full object-cover"
+            />
+          </Reveal>
+          <Reveal delay={100} className="relative overflow-hidden rounded-3xl shadow-[0_20px_40px_-16px_rgba(36,26,16,0.3)]">
+            <Image
+              src="/brand/bottling-line.webp"
+              alt="Empty glass bottles moving through the Fruvita bottling line"
+              width={1400}
+              height={1050}
+              className="h-full w-full object-cover"
+            />
+          </Reveal>
+        </div>
+
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4">
           {process.map((p, i) => (
             <Reveal key={p.step} delay={i * 100} className="text-center">
