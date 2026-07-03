@@ -106,7 +106,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--color-cream-deep)] py-20">
+      <section
+        className="bg-[var(--color-cream-deep)] py-20"
+        style={{
+          backgroundImage: "url('/brand/doodle-pattern.webp')",
+          backgroundSize: "420px",
+          backgroundRepeat: "repeat",
+        }}
+      >
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-semibold tracking-tight text-[var(--color-ink)]">
             Our Values

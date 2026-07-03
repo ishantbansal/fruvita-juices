@@ -201,7 +201,15 @@ export default function Home() {
 
       {/* STORY TEASER */}
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="gradient-mesh-deep relative overflow-hidden rounded-[2.5rem] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
+        <div className="relative overflow-hidden rounded-[2.5rem] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
+          <Image
+            src="/brand/orchard-harvest.webp"
+            alt=""
+            fill
+            sizes="1200px"
+            className="absolute inset-0 -z-20 object-cover"
+          />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[var(--color-ink)]/92 via-[var(--color-ink)]/85 to-[var(--color-leaf-deep)]/90" />
           <Blob
             color="rgba(255,255,255,0.1)"
             className="pointer-events-none absolute -bottom-20 -left-16 h-72 w-72 animate-spin-slow"
