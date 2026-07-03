@@ -17,9 +17,24 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://agreeable-glacier-0e426c110.7.azurestaticapps.net"),
   title: "Fruvita Juices — Real Fruit. Real Fruvita.",
   description:
     "Fruvita makes real-fruit juices — from classic mango and guava to bold new blends. Orchard to bottle, no shortcuts.",
+  openGraph: {
+    title: "Fruvita Juices — Real Fruit. Real Fruvita.",
+    description:
+      "Fruvita makes real-fruit juices — from classic mango and guava to bold new blends. Orchard to bottle, no shortcuts.",
+    images: ["/og-image.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fruvita Juices — Real Fruit. Real Fruvita.",
+    description:
+      "Fruvita makes real-fruit juices — from classic mango and guava to bold new blends.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

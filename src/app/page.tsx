@@ -5,10 +5,10 @@ import Blob from "@/components/Blob";
 import { products } from "@/data/products";
 
 const trustItems = [
-  { icon: "🍃", label: "Real Fruit, Always" },
-  { icon: "🚫", label: "No Artificial Colors*" },
-  { icon: "💧", label: "No Added Preservatives*" },
-  { icon: "🇮🇳", label: "Proudly Made in India" },
+  { icon: "🍃", label: "Real Fruit, Always", bg: "color-mix(in srgb, var(--color-leaf) 18%, transparent)" },
+  { icon: "🚫", label: "No Artificial Colors*", bg: "color-mix(in srgb, var(--color-guava) 18%, transparent)" },
+  { icon: "💧", label: "No Added Preservatives*", bg: "color-mix(in srgb, var(--color-mango) 18%, transparent)" },
+  { icon: "🇮🇳", label: "Proudly Made in India", bg: "color-mix(in srgb, var(--color-citrus) 22%, transparent)" },
 ];
 
 const pillars = [
@@ -27,19 +27,26 @@ const pillars = [
 ];
 
 const heroBottles = [products[0], products[1], products[3], products[9]];
+const pillarColors = ["var(--color-mango-deep)", "var(--color-guava-deep)", "var(--color-leaf-deep)"];
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* HERO */}
-      <section className="relative px-6 pt-16 pb-28 md:pt-24 md:pb-36">
+      <section className="gradient-mesh relative px-6 pt-16 pb-28 md:pt-24 md:pb-36">
         <Blob
           color="var(--color-mango)"
-          className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 opacity-20 animate-float-slow"
+          color2="var(--color-citrus)"
+          className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 opacity-60 animate-float-slow"
         />
         <Blob
           color="var(--color-guava)"
-          className="pointer-events-none absolute top-40 -right-32 h-[28rem] w-[28rem] opacity-15 animate-float-slower"
+          color2="var(--color-berry)"
+          className="pointer-events-none absolute top-40 -right-32 h-[28rem] w-[28rem] opacity-45 animate-float-slower"
+        />
+        <Blob
+          color="var(--color-lime)"
+          className="pointer-events-none absolute bottom-0 left-1/3 h-72 w-72 opacity-35 animate-float-slow"
         />
 
         <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-16 md:flex-row">
@@ -87,11 +94,16 @@ export default function Home() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="border-y border-[var(--color-line)] bg-[var(--color-paper)]">
+      <section className="relative border-y border-[var(--color-line)] bg-[var(--color-paper)]">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 py-8 md:grid-cols-4">
           {trustItems.map((t) => (
             <div key={t.label} className="flex items-center gap-3">
-              <span className="text-2xl">{t.icon}</span>
+              <span
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg"
+                style={{ background: t.bg }}
+              >
+                {t.icon}
+              </span>
               <span className="text-sm font-medium text-[var(--color-ink-soft)]">{t.label}</span>
             </div>
           ))}
@@ -116,9 +128,16 @@ export default function Home() {
           {pillars.map((p, i) => (
             <div
               key={p.title}
-              className="rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8"
+              className="relative overflow-hidden rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8"
             >
-              <span className="font-display text-4xl italic text-[var(--color-mango-deep)]">
+              <div
+                className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full opacity-20 blur-xl"
+                style={{ background: pillarColors[i] }}
+              />
+              <span
+                className="relative font-display text-4xl italic"
+                style={{ color: pillarColors[i] }}
+              >
                 0{i + 1}
               </span>
               <h3 className="mt-4 font-display text-xl font-semibold text-[var(--color-ink)]">
@@ -133,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* PRODUCT SHOWCASE */}
-      <section className="bg-[var(--color-cream-deep)] py-24">
+      <section className="gradient-mesh py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-col items-center text-center">
             <h2 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-ink)] md:text-5xl">
@@ -164,10 +183,14 @@ export default function Home() {
 
       {/* STORY TEASER */}
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-[var(--color-leaf)] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
+        <div className="gradient-mesh-deep relative overflow-hidden rounded-[2.5rem] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
           <Blob
-            color="rgba(255,255,255,0.08)"
+            color="rgba(255,255,255,0.1)"
             className="pointer-events-none absolute -bottom-20 -left-16 h-72 w-72 animate-spin-slow"
+          />
+          <Blob
+            color="rgba(255,255,255,0.06)"
+            className="pointer-events-none absolute -top-16 -right-10 h-56 w-56 animate-spin-slow"
           />
           <h2 className="relative font-display text-3xl font-semibold tracking-tight md:text-5xl">
             From Orchard to Bottle

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -18,11 +19,18 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-line)] bg-[var(--color-cream)]/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <Image
+            src="/brand/fruvita-icon.webp"
+            alt="Fruvita"
+            width={36}
+            height={36}
+            className="rounded-full transition-transform group-hover:scale-110"
+            priority
+          />
           <span className="font-display text-2xl font-semibold tracking-tight text-[var(--color-ink)]">
             Fruvita
           </span>
-          <span className="mt-1 h-2 w-2 rounded-full bg-[var(--color-mango)] transition-transform group-hover:scale-150" />
         </Link>
 
         <nav className="hidden gap-8 md:flex">

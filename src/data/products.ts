@@ -26,7 +26,7 @@ export const products: Product[] = [
     healthFact:
       "Mangoes are rich in vitamin C and vitamin A, supporting immunity and skin health.",
     line: "Originals",
-    colors: { from: "#f6a936", to: "#ee7f13", accent: "#c9660a" },
+    colors: { from: "#ffc94a", to: "#ff8a1e", accent: "#f5620a" },
   },
   {
     slug: "guava",
@@ -38,7 +38,7 @@ export const products: Product[] = [
     healthFact:
       "Guava juice can carry 200%+ of daily vitamin C value per serving — several times more than orange juice.",
     line: "Originals",
-    colors: { from: "#f294a8", to: "#d94068", accent: "#ac2c4d" },
+    colors: { from: "#ff8fae", to: "#ff2f6e", accent: "#d90d54" },
   },
   {
     slug: "orange",
@@ -47,7 +47,7 @@ export const products: Product[] = [
     short: "Classic, tangy-sweet orange juice — no shortcuts, just real oranges.",
     long: "The one everybody knows and nobody should compromise on. Fruvita Orange is bright, tangy, and unmistakably real — a breakfast-table staple built for consistency, not gimmicks.",
     line: "Originals",
-    colors: { from: "#ffb548", to: "#f2811a", accent: "#c9660a" },
+    colors: { from: "#ffd23f", to: "#ff9500", accent: "#f5620a" },
   },
   {
     slug: "litchi",
@@ -59,7 +59,7 @@ export const products: Product[] = [
     healthFact:
       "Lychee is higher in polyphenol antioxidants than many common fruits like apples.",
     line: "Originals",
-    colors: { from: "#f9c3cc", to: "#f6a6b2", accent: "#d9788a" },
+    colors: { from: "#ffc2d6", to: "#ff9fb5", accent: "#e8567f" },
   },
   {
     slug: "pineapple",
@@ -68,7 +68,7 @@ export const products: Product[] = [
     short: "Bright, tangy pineapple juice with real tropical bite.",
     long: "Fruvita Pineapple brings the tang and brightness of fresh-cut pineapple, balancing sweetness with the fruit's natural acidity for a juice that wakes up the palate.",
     line: "Originals",
-    colors: { from: "#f5d24b", to: "#e0b81f", accent: "#3f6b35" },
+    colors: { from: "#f6ea3a", to: "#c4e600", accent: "#8fb800" },
   },
   {
     slug: "pomegranate",
@@ -77,7 +77,7 @@ export const products: Product[] = [
     short: "Deep, ruby-red pomegranate juice with a rich, slightly tart edge.",
     long: "Pomegranate has long been associated with heart health thanks to its antioxidant-rich profile. Fruvita Pomegranate is deep red, robust, and unapologetically bold.",
     line: "Originals",
-    colors: { from: "#c23a52", to: "#8c1f38", accent: "#5c1526" },
+    colors: { from: "#e6244f", to: "#a3072f", accent: "#6e031f" },
   },
   {
     slug: "apple",
@@ -86,7 +86,7 @@ export const products: Product[] = [
     short: "A crisp, lightly sweet apple drink — simple, familiar, and universally loved.",
     long: "Sometimes the classics are classics for a reason. Fruvita Apple Drink is clean, crisp, and easy-drinking — a dependable choice for kids and adults alike.",
     line: "Originals",
-    colors: { from: "#cfe08a", to: "#8fae3f", accent: "#3f6b35" },
+    colors: { from: "#e3f766", to: "#a9d92a", accent: "#5f9e1e" },
   },
   {
     slug: "peachy",
@@ -95,7 +95,7 @@ export const products: Product[] = [
     short: "Smooth, fragrant peach juice with a naturally soft sweetness.",
     long: "Fruvita Peachy Juice is built around the fruit's natural, mellow sweetness and fragrance — a softer, rounder flavor profile than the citrus and tropical fruits in the lineup.",
     line: "Originals",
-    colors: { from: "#ffc9a3", to: "#f7935c", accent: "#c9660a" },
+    colors: { from: "#ffcf9e", to: "#ff8a4c", accent: "#f5620a" },
   },
   {
     slug: "mixed-fruit",
@@ -104,7 +104,7 @@ export const products: Product[] = [
     short: "A blend of orchard favorites in one bottle — balanced, never one-note.",
     long: "Can't pick just one? Fruvita Mixed Fruit blends multiple real fruits — mango, apple, orange and more — into a single balanced juice with layered flavor and no single overpowering note.",
     line: "Mix & Thrill",
-    colors: { from: "#f2811a", to: "#d94068", accent: "#3f6b35" },
+    colors: { from: "#ff9500", to: "#ff2f6e", accent: "#9b2fd9" },
   },
   {
     slug: "cranberry-thrill",
@@ -114,7 +114,7 @@ export const products: Product[] = [
     long: "Cranberries bring a distinctive tartness that's less \"sweet treat,\" more \"wake-up call.\" Fruvita Cranberry Thrill is for the drinker who wants flavor with a bit of an edge.",
     healthFact: "Cranberries are well known for supporting urinary tract and antioxidant health.",
     line: "Mix & Thrill",
-    colors: { from: "#a3213a", to: "#6c1526", accent: "#2a2117" },
+    colors: { from: "#e0184a", to: "#7a0326", accent: "#3a0716" },
   },
   {
     slug: "guava-thrill",
@@ -123,7 +123,7 @@ export const products: Product[] = [
     short: "A bolder, sweeter spin on classic guava — for fans of intensity.",
     long: "Where Fruvita Guava Juice plays it classic, Guava Thrill turns up the intensity — a punchier, sweeter guava experience for a younger, bolder-flavor audience.",
     line: "Mix & Thrill",
-    colors: { from: "#ff6f91", to: "#c9184a", accent: "#7a0f30" },
+    colors: { from: "#ff5c8a", to: "#ea0b52", accent: "#9b0a3d" },
   },
   {
     slug: "kiwi-kiss",
@@ -132,7 +132,7 @@ export const products: Product[] = [
     short: "Bright green kiwi juice — tangy, sweet, and refreshingly different.",
     long: "Kiwi is an underused hero: tangy-sweet, vitamin C-rich, and visually striking with its green flesh and black seeds. Fruvita Kiwi Kiss brings something different to the shelf.",
     line: "Mix & Thrill",
-    colors: { from: "#c7e05a", to: "#8fae3f", accent: "#3f6b35" },
+    colors: { from: "#d4f23a", to: "#8fd400", accent: "#3fae49" },
   },
   {
     slug: "electric-peachy",
@@ -141,7 +141,7 @@ export const products: Product[] = [
     short: "A brighter, fizzier take on peach — bold color, bold flavor.",
     long: "The \"Electric\" sub-variant of peach is built for standout shelf presence and a punchier flavor profile than the classic Peachy Juice — a fun, energetic alternative.",
     line: "Mix & Thrill",
-    colors: { from: "#ff9a5a", to: "#ff5d8f", accent: "#c9184a" },
+    colors: { from: "#ffb020", to: "#ff3d8f", accent: "#d90d54" },
   },
 ];
 

@@ -11,10 +11,15 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   return (
     <div>
-      <section className="relative overflow-hidden px-6 pt-16 pb-14 text-center">
+      <section className="gradient-mesh relative overflow-hidden px-6 pt-16 pb-14 text-center">
         <Blob
           color="var(--color-lychee)"
-          className="pointer-events-none absolute -top-16 right-0 h-72 w-72 opacity-30 animate-float-slow"
+          color2="var(--color-guava)"
+          className="pointer-events-none absolute -top-16 right-0 h-72 w-72 opacity-50 animate-float-slow"
+        />
+        <Blob
+          color="var(--color-lime)"
+          className="pointer-events-none absolute -bottom-20 left-0 h-64 w-64 opacity-40 animate-float-slower"
         />
         <span className="inline-block rounded-full border border-[var(--color-mango)]/40 bg-[var(--color-mango)]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-mango-deep)]">
           Thirteen Flavors

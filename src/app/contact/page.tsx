@@ -18,10 +18,15 @@ const details = [
 export default function ContactPage() {
   return (
     <div>
-      <section className="relative overflow-hidden px-6 pt-16 pb-14 text-center">
+      <section className="gradient-mesh relative overflow-hidden px-6 pt-16 pb-14 text-center">
         <Blob
           color="var(--color-mango)"
-          className="pointer-events-none absolute -top-16 left-1/2 h-80 w-80 -translate-x-1/2 opacity-15 animate-float-slow"
+          color2="var(--color-citrus)"
+          className="pointer-events-none absolute -top-16 left-1/2 h-80 w-80 -translate-x-1/2 opacity-45 animate-float-slow"
+        />
+        <Blob
+          color="var(--color-guava)"
+          className="pointer-events-none absolute bottom-0 right-0 h-56 w-56 opacity-30 animate-float-slower"
         />
         <span className="inline-block rounded-full border border-[var(--color-mango)]/40 bg-[var(--color-mango)]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-mango-deep)]">
           Get in Touch
@@ -58,7 +63,10 @@ export default function ContactPage() {
               </dl>
             </div>
 
-            <div className="rounded-3xl bg-[var(--color-leaf)] p-8 text-[var(--color-cream)]">
+            <div
+              className="rounded-3xl p-8 text-[var(--color-cream)]"
+              style={{ background: "linear-gradient(135deg, var(--color-leaf), var(--color-leaf-deep))" }}
+            >
               <h3 className="font-display text-lg font-semibold">
                 Become a Fruvita Partner
               </h3>

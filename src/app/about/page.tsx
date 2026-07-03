@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Blob from "@/components/Blob";
 
 export const metadata: Metadata = {
@@ -26,6 +27,13 @@ const values = [
   },
 ];
 
+const processColors = [
+  "var(--color-mango-deep)",
+  "var(--color-guava-deep)",
+  "var(--color-lime-deep)",
+  "var(--color-berry)",
+];
+
 const process = [
   { step: "01", title: "Sourcing", body: "We work with trusted farms and suppliers to source ripe, quality fruit. [PLACEHOLDER — add real sourcing details]" },
   { step: "02", title: "Processing", body: "[PLACEHOLDER — describe your actual process: cold-pressed, pasteurized, etc.]" },
@@ -36,10 +44,15 @@ const process = [
 export default function AboutPage() {
   return (
     <div>
-      <section className="relative overflow-hidden px-6 pt-16 pb-20 text-center">
+      <section className="gradient-mesh relative overflow-hidden px-6 pt-16 pb-20 text-center">
         <Blob
           color="var(--color-guava)"
-          className="pointer-events-none absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 opacity-15 animate-spin-slow"
+          color2="var(--color-berry)"
+          className="pointer-events-none absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 opacity-40 animate-spin-slow"
+        />
+        <Blob
+          color="var(--color-lime)"
+          className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 opacity-30 animate-float-slow"
         />
         <span className="inline-block rounded-full border border-[var(--color-leaf)]/40 bg-[var(--color-leaf)]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-leaf)]">
           Our Story
@@ -48,6 +61,24 @@ export default function AboutPage() {
           We started Fruvita because &ldquo;fruit juice&rdquo; shouldn&apos;t
           be a stretch of the imagination.
         </h1>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="relative overflow-hidden rounded-[2rem] shadow-[0_30px_60px_-20px_rgba(36,26,16,0.35)]">
+          <Image
+            src="/brand/orchard-harvest.webp"
+            alt="Fruvita orchard harvest at golden hour, crates of ripe mangoes and guavas"
+            width={1400}
+            height={934}
+            className="h-auto w-full object-cover"
+            priority
+          />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-ink)]/70 to-transparent p-6 md:p-8">
+            <p className="font-display text-lg italic text-[var(--color-cream)] md:text-xl">
+              Orchard to bottle — where every Fruvita flavor begins.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-20">
@@ -102,9 +133,12 @@ export default function AboutPage() {
           How We Make It
         </h2>
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4">
-          {process.map((p) => (
+          {process.map((p, i) => (
             <div key={p.step} className="text-center">
-              <span className="font-display text-5xl italic text-[var(--color-mango)]">
+              <span
+                className="font-display text-5xl italic"
+                style={{ color: processColors[i % processColors.length] }}
+              >
                 {p.step}
               </span>
               <h3 className="mt-3 font-display text-lg font-semibold text-[var(--color-ink)]">
@@ -119,7 +153,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rounded-[2.5rem] bg-[var(--color-ink)] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
+        <div className="gradient-mesh-deep rounded-[2.5rem] px-8 py-16 text-center text-[var(--color-cream)] md:px-16">
           <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
             Taste the Difference
           </h2>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,16 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <span className="font-display text-3xl font-semibold">Fruvita</span>
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/brand/fruvita-icon.webp"
+                alt="Fruvita"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              <span className="font-display text-3xl font-semibold">Fruvita</span>
+            </div>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-[var(--color-cream)]/70">
               Real Fruit. Real Fruvita. Juice made the way fruit intended —
               honest ingredients, orchard to bottle.

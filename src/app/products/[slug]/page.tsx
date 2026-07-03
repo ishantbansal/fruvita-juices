@@ -38,9 +38,20 @@ export default async function ProductDetailPage({
   return (
     <div>
       <section className="relative overflow-hidden px-6 pt-14 pb-20">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-25"
+          style={{
+            backgroundImage: `radial-gradient(circle at 15% 15%, ${product.colors.from}, transparent 45%), radial-gradient(circle at 85% 85%, ${product.colors.to}, transparent 45%)`,
+          }}
+        />
         <Blob
           color={product.colors.from}
-          className="pointer-events-none absolute -top-20 -left-20 h-96 w-96 opacity-25 animate-float-slow"
+          color2={product.colors.to}
+          className="pointer-events-none absolute -top-20 -left-20 h-96 w-96 opacity-40 animate-float-slow"
+        />
+        <Blob
+          color={product.colors.accent}
+          className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 opacity-25 animate-float-slower"
         />
         <div className="mx-auto max-w-6xl">
           <Link

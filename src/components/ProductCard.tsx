@@ -9,8 +9,12 @@ export default function ProductCard({ product }: { product: Product }) {
       className="group relative flex flex-col items-center overflow-hidden rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-6 transition-all hover:-translate-y-1.5 hover:shadow-[0_24px_40px_-12px_rgba(42,33,23,0.2)]"
     >
       <div
-        className="absolute -top-10 -right-10 h-32 w-32 rounded-full opacity-20 blur-2xl transition-opacity group-hover:opacity-40"
-        style={{ background: product.colors.to }}
+        className="absolute -top-10 -right-10 h-32 w-32 rounded-full opacity-30 blur-2xl transition-all duration-300 group-hover:opacity-60 group-hover:scale-125"
+        style={{ background: `linear-gradient(135deg, ${product.colors.from}, ${product.colors.to})` }}
+      />
+      <div
+        className="absolute -bottom-12 -left-10 h-24 w-24 rounded-full opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-40"
+        style={{ background: product.colors.accent }}
       />
       <div className="relative h-44 w-24">
         <JuiceBottle {...product.colors} className="h-full w-full" />

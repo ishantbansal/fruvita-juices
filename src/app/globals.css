@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --color-cream: #fbf3e6;
-  --color-cream-deep: #f3e4cc;
-  --color-paper: #fffaf1;
-  --color-ink: #2a2117;
-  --color-ink-soft: #5a4d3c;
-  --color-mango: #ee7f13;
-  --color-mango-deep: #c9660a;
-  --color-guava: #d94068;
-  --color-guava-deep: #ac2c4d;
-  --color-leaf: #3f6b35;
-  --color-leaf-deep: #2b4a25;
-  --color-lychee: #f6a6b2;
-  --color-line: rgba(42, 33, 23, 0.12);
+  --color-cream: #fff8ec;
+  --color-cream-deep: #ffedd1;
+  --color-paper: #fffdf8;
+  --color-ink: #241a10;
+  --color-ink-soft: #5c4a34;
+
+  /* juicy, saturated fruit palette */
+  --color-mango: #ff8a1e;
+  --color-mango-deep: #f5620a;
+  --color-guava: #ff2f6e;
+  --color-guava-deep: #d90d54;
+  --color-leaf: #3fae49;
+  --color-leaf-deep: #1f7a2e;
+  --color-lychee: #ff9fb5;
+  --color-lime: #c4e600;
+  --color-lime-deep: #8fb800;
+  --color-citrus: #ffcc29;
+  --color-berry: #9b2fd9;
+  --color-line: rgba(36, 26, 16, 0.1);
 }
 
 @theme inline {
@@ -29,6 +35,10 @@
   --color-leaf: var(--color-leaf);
   --color-leaf-deep: var(--color-leaf-deep);
   --color-lychee: var(--color-lychee);
+  --color-lime: var(--color-lime);
+  --color-lime-deep: var(--color-lime-deep);
+  --color-citrus: var(--color-citrus);
+  --color-berry: var(--color-berry);
   --font-display: var(--font-fraunces);
   --font-body: var(--font-manrope);
 }
@@ -69,6 +79,35 @@ body::before {
   color: transparent;
 }
 
+/* juicy multi-color gradient mesh backdrop */
+.gradient-mesh {
+  background-image:
+    radial-gradient(circle at 12% 18%, color-mix(in srgb, var(--color-mango) 55%, transparent) 0%, transparent 42%),
+    radial-gradient(circle at 85% 12%, color-mix(in srgb, var(--color-guava) 45%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 78% 78%, color-mix(in srgb, var(--color-lime) 50%, transparent) 0%, transparent 40%),
+    radial-gradient(circle at 15% 82%, color-mix(in srgb, var(--color-lychee) 55%, transparent) 0%, transparent 42%),
+    radial-gradient(circle at 50% 50%, var(--color-cream) 0%, var(--color-cream) 100%);
+}
+
+.gradient-mesh-deep {
+  background-image:
+    radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--color-mango) 70%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 82% 15%, color-mix(in srgb, var(--color-berry) 55%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--color-leaf) 60%, transparent) 0%, transparent 42%),
+    radial-gradient(circle at 18% 85%, color-mix(in srgb, var(--color-guava) 60%, transparent) 0%, transparent 42%),
+    linear-gradient(135deg, var(--color-ink) 0%, #1a2a12 100%);
+}
+
+/* glossy droplet highlight, used on bottles/blobs for a wet juicy sheen */
+.gloss::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(255,255,255,0.35) 0%, transparent 35%);
+  pointer-events: none;
+}
+
 @keyframes float-slow {
   0%, 100% { transform: translate(0, 0) rotate(0deg); }
   50% { transform: translate(-12px, 18px) rotate(6deg); }
@@ -94,6 +133,16 @@ body::before {
 
 .animate-spin-slow {
   animation: rotate-slow 40s linear infinite;
+}
+
+@keyframes drip {
+  0% { transform: translateY(-4px); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(14px); opacity: 0; }
+}
+
+.animate-drip {
+  animation: drip 2.6s ease-in infinite;
 }
 
 .reveal {
