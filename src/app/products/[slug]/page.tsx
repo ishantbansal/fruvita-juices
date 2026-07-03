@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import JuiceBottle from "@/components/JuiceBottle";
 import ProductCard from "@/components/ProductCard";
@@ -63,9 +64,22 @@ export default async function ProductDetailPage({
 
           <div className="mt-8 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div className="relative flex justify-center">
-              <div className="h-[360px] w-52 animate-float-slow">
-                <JuiceBottle {...product.colors} className="h-full w-full" label={product.name.split(" ")[0]} />
-              </div>
+              {product.image ? (
+                <div className="relative h-[420px] w-64 animate-float-slow">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="256px"
+                    priority
+                    className="object-contain drop-shadow-[0_28px_32px_rgba(42,33,23,0.3)]"
+                  />
+                </div>
+              ) : (
+                <div className="h-[360px] w-52 animate-float-slow">
+                  <JuiceBottle {...product.colors} className="h-full w-full" label={product.name.split(" ")[0]} />
+                </div>
+              )}
             </div>
 
             <div>

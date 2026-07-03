@@ -2,6 +2,7 @@ import Link from "next/link";
 import JuiceBottle from "@/components/JuiceBottle";
 import ProductCard from "@/components/ProductCard";
 import Blob from "@/components/Blob";
+import Reveal from "@/components/Reveal";
 import { products } from "@/data/products";
 
 const trustItems = [
@@ -112,7 +113,7 @@ export default function Home() {
 
       {/* WHY FRUVITA */}
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-ink)] md:text-5xl">
             Juice, the Way Fruit Intended
           </h2>
@@ -122,31 +123,30 @@ export default function Home() {
             mango or guava. Just fruit, pressed and bottled to taste like it
             should.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           {pillars.map((p, i) => (
-            <div
-              key={p.title}
-              className="relative overflow-hidden rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8"
-            >
-              <div
-                className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full opacity-20 blur-xl"
-                style={{ background: pillarColors[i] }}
-              />
-              <span
-                className="relative font-display text-4xl italic"
-                style={{ color: pillarColors[i] }}
-              >
-                0{i + 1}
-              </span>
-              <h3 className="mt-4 font-display text-xl font-semibold text-[var(--color-ink)]">
-                {p.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                {p.body}
-              </p>
-            </div>
+            <Reveal key={p.title} delay={i * 100}>
+              <div className="relative overflow-hidden rounded-3xl border border-[var(--color-line)] bg-[var(--color-paper)] p-8">
+                <div
+                  className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full opacity-20 blur-xl"
+                  style={{ background: pillarColors[i] }}
+                />
+                <span
+                  className="relative font-display text-4xl italic"
+                  style={{ color: pillarColors[i] }}
+                >
+                  0{i + 1}
+                </span>
+                <h3 className="mt-4 font-display text-xl font-semibold text-[var(--color-ink)]">
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  {p.body}
+                </p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function Home() {
       {/* PRODUCT SHOWCASE */}
       <section className="gradient-mesh py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="flex flex-col items-center text-center">
+          <Reveal className="flex flex-col items-center text-center">
             <h2 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-ink)] md:text-5xl">
               Explore the Range
             </h2>
@@ -162,11 +162,13 @@ export default function Home() {
               From everyday classics to bold new blends — thirteen flavors,
               all real fruit.
             </p>
-          </div>
+          </Reveal>
 
           <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
-            {products.slice(0, 8).map((p) => (
-              <ProductCard key={p.slug} product={p} />
+            {products.slice(0, 8).map((p, i) => (
+              <Reveal key={p.slug} delay={(i % 4) * 80}>
+                <ProductCard product={p} />
+              </Reveal>
             ))}
           </div>
 

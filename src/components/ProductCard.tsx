@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import JuiceBottle from "./JuiceBottle";
 import type { Product } from "@/data/products";
 
@@ -17,7 +18,17 @@ export default function ProductCard({ product }: { product: Product }) {
         style={{ background: product.colors.accent }}
       />
       <div className="relative h-44 w-24">
-        <JuiceBottle {...product.colors} className="h-full w-full" />
+        {product.image ? (
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            sizes="96px"
+            className="object-contain drop-shadow-[0_12px_16px_rgba(42,33,23,0.25)] transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <JuiceBottle {...product.colors} className="h-full w-full" />
+        )}
       </div>
       <span className="mt-5 font-display text-lg font-semibold text-[var(--color-ink)]">
         {product.name}

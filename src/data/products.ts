@@ -8,6 +8,7 @@ export interface Product {
   long: string;
   healthFact?: string;
   line: ProductLine;
+  image?: string;
   colors: {
     from: string;
     to: string;
@@ -26,6 +27,7 @@ export const products: Product[] = [
     healthFact:
       "Mangoes are rich in vitamin C and vitamin A, supporting immunity and skin health.",
     line: "Originals",
+    image: "/products/mango.webp",
     colors: { from: "#ffc94a", to: "#ff8a1e", accent: "#f5620a" },
   },
   {
@@ -38,6 +40,7 @@ export const products: Product[] = [
     healthFact:
       "Guava juice can carry 200%+ of daily vitamin C value per serving — several times more than orange juice.",
     line: "Originals",
+    image: "/products/guava.webp",
     colors: { from: "#ff8fae", to: "#ff2f6e", accent: "#d90d54" },
   },
   {
@@ -47,6 +50,7 @@ export const products: Product[] = [
     short: "Classic, tangy-sweet orange juice — no shortcuts, just real oranges.",
     long: "The one everybody knows and nobody should compromise on. Fruvita Orange is bright, tangy, and unmistakably real — a breakfast-table staple built for consistency, not gimmicks.",
     line: "Originals",
+    image: "/products/orange.webp",
     colors: { from: "#ffd23f", to: "#ff9500", accent: "#f5620a" },
   },
   {
@@ -59,6 +63,7 @@ export const products: Product[] = [
     healthFact:
       "Lychee is higher in polyphenol antioxidants than many common fruits like apples.",
     line: "Originals",
+    image: "/products/litchi.webp",
     colors: { from: "#ffc2d6", to: "#ff9fb5", accent: "#e8567f" },
   },
   {
@@ -68,6 +73,7 @@ export const products: Product[] = [
     short: "Bright, tangy pineapple juice with real tropical bite.",
     long: "Fruvita Pineapple brings the tang and brightness of fresh-cut pineapple, balancing sweetness with the fruit's natural acidity for a juice that wakes up the palate.",
     line: "Originals",
+    image: "/products/pineapple.webp",
     colors: { from: "#f6ea3a", to: "#c4e600", accent: "#8fb800" },
   },
   {
@@ -77,6 +83,7 @@ export const products: Product[] = [
     short: "Deep, ruby-red pomegranate juice with a rich, slightly tart edge.",
     long: "Pomegranate has long been associated with heart health thanks to its antioxidant-rich profile. Fruvita Pomegranate is deep red, robust, and unapologetically bold.",
     line: "Originals",
+    image: "/products/pomegranate.webp",
     colors: { from: "#e6244f", to: "#a3072f", accent: "#6e031f" },
   },
   {
@@ -86,6 +93,7 @@ export const products: Product[] = [
     short: "A crisp, lightly sweet apple drink — simple, familiar, and universally loved.",
     long: "Sometimes the classics are classics for a reason. Fruvita Apple Drink is clean, crisp, and easy-drinking — a dependable choice for kids and adults alike.",
     line: "Originals",
+    image: "/products/apple.webp",
     colors: { from: "#e3f766", to: "#a9d92a", accent: "#5f9e1e" },
   },
   {
