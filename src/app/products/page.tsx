@@ -7,7 +7,7 @@ import { originals, mixAndThrill } from "@/data/products";
 
 export const metadata: Metadata = {
   title: "Our Juices",
-  description: "Explore all 13 Fruvita flavors, from classic Originals to bold Mix & Thrill blends.",
+  description: "Explore all 14 Fruvita flavors, from classic Originals to bold Mix & Thrill blends.",
   alternates: {
     canonical: "/products",
   },

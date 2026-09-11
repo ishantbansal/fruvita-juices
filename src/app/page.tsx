@@ -193,7 +193,7 @@ export default function Home() {
               href="/products"
               className="rounded-full bg-[var(--color-ink)] px-8 py-3.5 text-sm font-semibold text-[var(--color-cream)] transition-transform hover:scale-105"
             >
-              View All 13 Flavors →
+              View All 14 Flavors →
             </Link>
           </div>
         </div>

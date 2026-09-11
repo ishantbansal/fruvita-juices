@@ -99,7 +99,7 @@ export default function AboutPage() {
             corners.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-[var(--color-ink-soft)]">
-            Today, Fruvita makes 13 flavors across two lines — our classic
+            Today, Fruvita makes 14 flavors across two lines — our classic
             Originals and our bolder Mix &amp; Thrill range — sold across{" "}
             <span className="font-semibold text-[var(--color-ink)]">
               [REGION / CITY — PLACEHOLDER]

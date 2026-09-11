@@ -34,6 +34,9 @@ Reference: `content/images/mockups/fruvita-packaging-mango-juice.png` is the **l
 ### Peachy Juice
 > "Fruvita Peachy Juice bottle, juice color soft peachy-orange (#ff8a4c), label headline 'Peachy' in warm orange bold display serif with 'Juice' beneath in ink-brown, hero fruit art: a whole fuzzy-skinned peach and a peach half showing the stone and pit" + suffix
 
+### Dragon Fruit Juice
+> "Fruvita Dragon Fruit Juice bottle, juice color vivid magenta-pink (#e0009a), label headline 'Dragon Fruit' in bold magenta display serif with 'Juice' beneath in ink-brown, hero fruit art: a whole pink-skinned dragon fruit with its scaly green-tipped leaves and one half sliced open showing white flesh speckled with black seeds" + suffix
+
 ---
 
 ## Mix & Thrill line

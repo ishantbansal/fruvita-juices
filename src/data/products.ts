@@ -106,6 +106,18 @@ export const products: Product[] = [
     colors: { from: "#ffcf9e", to: "#ff8a4c", accent: "#f5620a" },
   },
   {
+    slug: "dragon-fruit",
+    name: "Dragon Fruit Juice",
+    tagline: "Exotic, Vivid, Refreshing",
+    short:
+      "Vivid magenta dragon fruit juice with a light, floral sweetness and a striking color to match.",
+    long: "Fruvita Dragon Fruit is built around the pitaya's delicate, faintly sweet flavor and its show-stopping natural color — a lighter, more refreshing profile than the heavier tropical fruits in the lineup, with none of the color added.",
+    healthFact:
+      "Dragon fruit is rich in vitamin C and antioxidant betalains, and one of the few fruits that gets its vivid color naturally.",
+    line: "Originals",
+    colors: { from: "#ff5fd6", to: "#e0009a", accent: "#8f0075" },
+  },
+  {
     slug: "mixed-fruit",
     name: "Mixed Fruit Juice",
     tagline: "Everything Good, In One Glass",
