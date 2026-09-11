@@ -103,6 +103,7 @@ export const products: Product[] = [
     short: "Smooth, fragrant peach juice with a naturally soft sweetness.",
     long: "Fruvita Peachy Juice is built around the fruit's natural, mellow sweetness and fragrance — a softer, rounder flavor profile than the citrus and tropical fruits in the lineup.",
     line: "Originals",
+    image: "/products/peachy.webp",
     colors: { from: "#ffcf9e", to: "#ff8a4c", accent: "#f5620a" },
   },
   {
@@ -115,6 +116,7 @@ export const products: Product[] = [
     healthFact:
       "Dragon fruit is rich in vitamin C and antioxidant betalains, and one of the few fruits that gets its vivid color naturally.",
     line: "Originals",
+    image: "/products/dragon-fruit.webp",
     colors: { from: "#ff5fd6", to: "#e0009a", accent: "#8f0075" },
   },
   {
@@ -124,6 +126,7 @@ export const products: Product[] = [
     short: "A blend of orchard favorites in one bottle — balanced, never one-note.",
     long: "Can't pick just one? Fruvita Mixed Fruit blends multiple real fruits — mango, apple, orange and more — into a single balanced juice with layered flavor and no single overpowering note.",
     line: "Mix & Thrill",
+    image: "/products/mixed-fruit.webp",
     colors: { from: "#ff9500", to: "#ff2f6e", accent: "#9b2fd9" },
   },
   {
@@ -134,6 +137,7 @@ export const products: Product[] = [
     long: "Cranberries bring a distinctive tartness that's less \"sweet treat,\" more \"wake-up call.\" Fruvita Cranberry Thrill is for the drinker who wants flavor with a bit of an edge.",
     healthFact: "Cranberries are well known for supporting urinary tract and antioxidant health.",
     line: "Mix & Thrill",
+    image: "/products/cranberry-thrill.webp",
     colors: { from: "#e0184a", to: "#7a0326", accent: "#3a0716" },
   },
   {
@@ -143,6 +147,7 @@ export const products: Product[] = [
     short: "A bolder, sweeter spin on classic guava — for fans of intensity.",
     long: "Where Fruvita Guava Juice plays it classic, Guava Thrill turns up the intensity — a punchier, sweeter guava experience for a younger, bolder-flavor audience.",
     line: "Mix & Thrill",
+    image: "/products/guava-thrill.webp",
     colors: { from: "#ff5c8a", to: "#ea0b52", accent: "#9b0a3d" },
   },
   {
@@ -161,6 +166,7 @@ export const products: Product[] = [
     short: "A brighter, fizzier take on peach — bold color, bold flavor.",
     long: "The \"Electric\" sub-variant of peach is built for standout shelf presence and a punchier flavor profile than the classic Peachy Juice — a fun, energetic alternative.",
     line: "Mix & Thrill",
+    image: "/products/electric-peachy.webp",
     colors: { from: "#ffb020", to: "#ff3d8f", accent: "#d90d54" },
   },
 ];
