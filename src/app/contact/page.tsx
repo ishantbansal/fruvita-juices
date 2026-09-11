@@ -4,8 +4,11 @@ import Blob from "@/components/Blob";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Contact — Fruvita",
+  title: "Contact",
   description: "Get in touch with Fruvita for general inquiries, distribution, or feedback.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const details = [

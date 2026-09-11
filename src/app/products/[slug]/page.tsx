@@ -20,8 +20,17 @@ export async function generateMetadata({
   const product = getProduct(slug);
   if (!product) return {};
   return {
-    title: `${product.name} — Fruvita`,
+    title: product.name,
     description: product.short,
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
+    openGraph: {
+      title: `${product.name} — Fruvita`,
+      description: product.short,
+      url: `/products/${product.slug}`,
+      images: product.image ? [{ url: product.image }] : undefined,
+    },
   };
 }
 
@@ -36,8 +45,25 @@ export default async function ProductDetailPage({
 
   const related = products.filter((p) => p.line === product.line && p.slug !== product.slug).slice(0, 4);
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.short,
+    brand: {
+      "@type": "Brand",
+      name: "Fruvita",
+    },
+    ...(product.image && { image: `https://fruvitajuices.com${product.image}` }),
+    url: `https://fruvitajuices.com/products/${product.slug}`,
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <section className="relative overflow-hidden px-6 pt-14 pb-20">
         <div
           className="pointer-events-none absolute inset-0 opacity-25"

@@ -5,8 +5,11 @@ import Blob from "@/components/Blob";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Our Story — Fruvita",
+  title: "Our Story",
   description: "Why Fruvita exists, our values, and how we make real-fruit juice.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const values = [

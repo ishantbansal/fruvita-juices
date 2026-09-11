@@ -6,8 +6,11 @@ import Reveal from "@/components/Reveal";
 import { originals, mixAndThrill } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Our Juices — Fruvita",
+  title: "Our Juices",
   description: "Explore all 13 Fruvita flavors, from classic Originals to bold Mix & Thrill blends.",
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 export default function ProductsPage() {
