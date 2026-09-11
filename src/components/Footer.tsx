@@ -48,15 +48,14 @@ export default function Footer() {
               Get in Touch
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-[var(--color-cream)]/80">
-              <li>[PHONE PLACEHOLDER]</li>
               <li>[EMAIL PLACEHOLDER]</li>
-              <li>[ADDRESS PLACEHOLDER]</li>
+              <li>Booth No. 54, Sector 7, Panchkula, Haryana 134112</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-[var(--color-cream)]/15 pt-6 text-xs text-[var(--color-cream)]/50 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Fruvita Juices. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SP AGRO Industries. All rights reserved.</p>
           <p>FSSAI License No. [PLACEHOLDER] · Privacy Policy · Terms of Use</p>
         </div>
       </div>

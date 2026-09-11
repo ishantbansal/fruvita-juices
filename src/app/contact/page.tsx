@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const details = [
-  { label: "Registered Office", value: "[ADDRESS PLACEHOLDER]" },
-  { label: "Phone", value: "[PHONE PLACEHOLDER]" },
+  { label: "Firm Name", value: "SP AGRO Industries" },
+  { label: "Registered Office", value: "Booth No. 54, Sector 7, Panchkula, Haryana 134112" },
   { label: "General Email", value: "[hello@fruvita.example]" },
   { label: "Business / Distribution", value: "[business@fruvita.example]" },
   { label: "Business Hours", value: "[HOURS PLACEHOLDER]" },
