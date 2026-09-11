@@ -157,6 +157,7 @@ export const products: Product[] = [
     short: "Bright green kiwi juice — tangy, sweet, and refreshingly different.",
     long: "Kiwi is an underused hero: tangy-sweet, vitamin C-rich, and visually striking with its green flesh and black seeds. Fruvita Kiwi Kiss brings something different to the shelf.",
     line: "Mix & Thrill",
+    image: "/products/kiwi-kiss.webp",
     colors: { from: "#d4f23a", to: "#8fd400", accent: "#3fae49" },
   },
   {
