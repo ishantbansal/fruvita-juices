@@ -47,4 +47,4 @@ Two-tab layout:
 - Nav: Home | Our Juices | About Us | Where to Buy | Contact | Careers
 - Legal: FSSAI License No. [PLACEHOLDER] | Privacy Policy | Terms of Use
 - Social: Instagram | Facebook | YouTube
-- Contact: [PHONE PLACEHOLDER] | [EMAIL PLACEHOLDER] | [ADDRESS PLACEHOLDER]
+- Contact: [PHONE PLACEHOLDER] | info@fruvitajuices.com | [ADDRESS PLACEHOLDER]

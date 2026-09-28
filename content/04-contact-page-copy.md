@@ -7,8 +7,7 @@
 ## Contact Details (placeholders — fill with real info)
 - **Registered Office:** [ADDRESS PLACEHOLDER]
 - **Phone:** [PHONE PLACEHOLDER]
-- **Email (general):** [hello@fruvita.example — PLACEHOLDER DOMAIN]
-- **Email (business/distribution):** [business@fruvita.example — PLACEHOLDER]
+- **Email:** info@fruvitajuices.com
 - **Business Hours:** [HOURS PLACEHOLDER]
 
 ## Contact Form Fields
@@ -21,7 +20,7 @@
 
 ## Distributor / Dealership Section (common for juice brands — include if relevant)
 **Headline:** Become a Fruvita Partner
-**Body:** Interested in stocking Fruvita or becoming a regional distributor? Reach out to our business team at [business email placeholder] with your location and business details.
+**Body:** Interested in stocking Fruvita or becoming a regional distributor? Reach out to our team at info@fruvitajuices.com with your location and business details.
 
 ## Map Embed
 [Google Maps embed placeholder — insert once real address confirmed]

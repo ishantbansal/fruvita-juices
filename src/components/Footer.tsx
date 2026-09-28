@@ -48,7 +48,7 @@ export default function Footer() {
               Get in Touch
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-[var(--color-cream)]/80">
-              <li>[EMAIL PLACEHOLDER]</li>
+              <li>info@fruvitajuices.com</li>
               <li>Booth No. 54, Sector 7, Panchkula, Haryana 134112</li>
             </ul>
           </div>
