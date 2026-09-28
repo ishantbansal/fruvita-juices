@@ -5,9 +5,9 @@
 **Subheadline:** We started Fruvita because "fruit juice" shouldn't be a stretch of the imagination.
 
 ## Origin Story (placeholder — replace with real founding story/date/founder names)
-Fruvita began with [FOUNDER NAME(S)/YEAR PLACEHOLDER] and a simple observation: most juice on the shelf leaned harder on flavoring and sugar than on actual fruit. We set out to build a juice brand that put real fruit back at the center — sourced thoughtfully, processed with care, and bottled without cutting corners.
+Fruvita began with Narinder Goyal in 2026 and a simple observation: most juice on the shelf leaned harder on flavoring and sugar than on actual fruit. We set out to build a juice brand that put real fruit back at the center — sourced thoughtfully, processed with care, and bottled without cutting corners.
 
-Today, Fruvita makes [NUMBER] flavors across two lines — our classic Originals and our bolder Mix & Thrill range — sold across [REGION/CITY PLACEHOLDER].
+Today, Fruvita makes 14 flavors across two lines — our classic Originals and our bolder Mix & Thrill range — sold across India.
 
 ## Our Values
 1. **Fruit First** — If it's not real fruit, it's not in the bottle.

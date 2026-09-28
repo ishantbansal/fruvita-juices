@@ -8,7 +8,7 @@
 - **Registered Office:** [ADDRESS PLACEHOLDER]
 - **Phone:** [PHONE PLACEHOLDER]
 - **Email:** info@fruvitajuices.com
-- **Business Hours:** [HOURS PLACEHOLDER]
+- **Business Hours:** Mon–Sat, 10:00 AM – 7:00 PM
 
 ## Contact Form Fields
 - Name

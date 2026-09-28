@@ -15,7 +15,7 @@ const details = [
   { label: "Firm Name", value: "SP AGRO Industries" },
   { label: "Registered Office", value: "Booth No. 54, Sector 7, Panchkula, Haryana 134112" },
   { label: "Email", value: "info@fruvitajuices.com" },
-  { label: "Business Hours", value: "[HOURS PLACEHOLDER]" },
+  { label: "Business Hours", value: "Mon–Sat, 10:00 AM – 7:00 PM" },
 ];
 
 export default function ContactPage() {

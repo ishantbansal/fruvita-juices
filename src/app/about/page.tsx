@@ -90,7 +90,7 @@ export default function AboutPage() {
           <p className="text-lg leading-relaxed text-[var(--color-ink-soft)]">
             Fruvita began with{" "}
             <span className="font-semibold text-[var(--color-ink)]">
-              [FOUNDER NAME(S) / YEAR — PLACEHOLDER]
+              Narinder Goyal in 2026
             </span>{" "}
             and a simple observation: most juice on the shelf leaned harder
             on flavoring and sugar than on actual fruit. We set out to build
@@ -102,7 +102,7 @@ export default function AboutPage() {
             Today, Fruvita makes 14 flavors across two lines — our classic
             Originals and our bolder Mix &amp; Thrill range — sold across{" "}
             <span className="font-semibold text-[var(--color-ink)]">
-              [REGION / CITY — PLACEHOLDER]
+              India
             </span>
             .
           </p>
