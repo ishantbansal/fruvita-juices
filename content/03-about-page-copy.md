@@ -15,11 +15,11 @@ Today, Fruvita makes 14 flavors across two lines — our classic Originals and o
 3. **Rooted in India** — Flavors that reflect real Indian tastes, from mango to matka-style coolers, not imported flavor trends.
 4. **Quality at Every Step** — From sourcing to bottling, every stage is built around consistency and care.
 
-## How We Make It (placeholder — replace with real process details)
-1. **Sourcing** — We work with [FARMS/SUPPLIERS PLACEHOLDER] to source ripe, quality fruit.
-2. **Processing** — [PROCESS DETAILS PLACEHOLDER — e.g., cold-pressed, pasteurized, etc.]
-3. **Bottling** — [PACKAGING DETAILS PLACEHOLDER — bottle sizes, formats]
-4. **Quality Checks** — [QC/CERTIFICATION PLACEHOLDER — FSSAI, ISO, etc.]
+## How We Make It
+1. **Sourcing** — We work with trusted farms and suppliers across India to source ripe, quality fruit at peak season, so every batch starts with the best raw material available.
+2. **Processing** — Fruit is washed, sorted, and pressed under hygienic conditions, then pasteurized to lock in freshness and shelf life without relying on artificial preservatives.
+3. **Bottling** — Juice is bottled fresh in sealed, tamper-evident packaging, ready to ship straight from our facility to your shelf.
+4. **Quality Checks** — Every batch is checked against our internal quality standards and produced under FSSAI-compliant food safety practices.
 
 ## Meet the Team (optional section — fill in if you want a team page)
 [FOUNDER/TEAM PHOTOS AND BIOS PLACEHOLDER]

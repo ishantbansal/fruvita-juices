@@ -39,10 +39,10 @@ const processColors = [
 ];
 
 const process = [
-  { step: "01", title: "Sourcing", body: "We work with trusted farms and suppliers to source ripe, quality fruit. [PLACEHOLDER — add real sourcing details]" },
-  { step: "02", title: "Processing", body: "[PLACEHOLDER — describe your actual process: cold-pressed, pasteurized, etc.]" },
-  { step: "03", title: "Bottling", body: "[PLACEHOLDER — describe packaging formats and sizes]" },
-  { step: "04", title: "Quality Checks", body: "[PLACEHOLDER — list certifications: FSSAI, ISO, etc.]" },
+  { step: "01", title: "Sourcing", body: "We work with trusted farms and suppliers across India to source ripe, quality fruit at peak season, so every batch starts with the best raw material available." },
+  { step: "02", title: "Processing", body: "Fruit is washed, sorted, and pressed under hygienic conditions, then pasteurized to lock in freshness and shelf life without relying on artificial preservatives." },
+  { step: "03", title: "Bottling", body: "Juice is bottled fresh in sealed, tamper-evident packaging, ready to ship straight from our facility to your shelf." },
+  { step: "04", title: "Quality Checks", body: "Every batch is checked against our internal quality standards and produced under FSSAI-compliant food safety practices." },
 ];
 
 export default function AboutPage() {
